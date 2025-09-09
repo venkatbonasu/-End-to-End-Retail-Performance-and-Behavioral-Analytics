@@ -1,68 +1,101 @@
-# 🛒 Retail Sales Analysis Project  
+🛒 Retail Sales Analysis Project
+🎯 Objective
 
-## 📖 Objective  
-The objective of this project is to analyze a retail sales dataset to gain insights into customer behavior, product performance, store profitability, and return trends.  
-The analysis helps answer key business questions such as:  
-- Who are the most valuable customers?  
-- Which products are most profitable and which have high return rates?  
-- How do stores perform in terms of revenue vs. cost?  
-- What strategies can improve customer retention and sales?  
+This project focuses on analyzing a retail dataset to uncover customer behavior, product performance, store profitability, and return patterns.
 
----
+The insights are aimed at helping stakeholders answer critical business questions such as:
 
-## 🛠️ Tools & Technologies  
-- **Excel** → Initial data inspection & error checking  
-- **Python (Pandas, Matplotlib, Seaborn)** → Data cleaning, feature engineering & EDA  
-- **MS SQL Server** → Data modeling (ER diagram), SQL queries, KPIs  
-- **Power BI** → Dashboard creation, RFM segmentation, interactive visuals  
+Who are the most valuable customers?
 
----
+Which products drive the highest profit and which ones have high return rates?
 
-## 🧹 Data Cleaning Steps (Python)  
-1. **Customers (df1):**  
-   - Converted `signup_date` to datetime  
-   - Filled missing `age` with median, derived `age_group`  
-   - Removed duplicate `customer_id`  
+How profitable are stores compared to their operating costs?
 
-2. **Returns (df2):**  
-   - Converted `return_date` to datetime  
-   - Dropped missing values, removed duplicate `return_id`  
+What strategies can be implemented to improve customer retention and revenue?
 
-3. **Sales (df3):**  
-   - Converted `order_date` to datetime  
-   - Filled missing `store_id` with “0” (online sales)  
-   - Removed duplicate `order_id`    
+🛠️ Tools & Technologies
 
-4. **Stores (df4):**  
-   - Dropped nulls and duplicate `store_id`  
+📊 Excel → Initial data inspection & validation
 
-5. **Products (df5):**  
-   - Derived `sold_units`, `return_quantity`, `return_rate`, and `profit`  
-   - Filled missing `brand` with “Unknown”   
+🐍 Python (Pandas, Matplotlib, Seaborn) → Data cleaning, feature engineering, EDA
 
----
+🗄️ MS SQL Server → Data modeling (ER diagram), queries, KPIs
 
-## 🗃️ SQL Queries Solved  
-1. What is the total revenue generated in the last 12 months? 
-2. Which are the top 5 best-selling products by quantity? 
-3. How many customers are from each region? 
-4. Which store has the highest profit in the past year? 
-5. What is the return rate by product category? 
-6. What is the average revenue per customer by age group? 
-7. Which sales channel (Online vs In-Store) is more profitable on average? 
-8. How has monthly profit changed over the last 2 years by region? 
-9. Identify the top 3 products with the highest return rate in each category. 
-10. Which 5 customers have contributed the most to total profit, and what is their 
-tenure with the company? 
+📈 Power BI → Interactive dashboards, RFM segmentation, storytelling visuals
 
----
+🧹 Data Cleaning & Feature Engineering
 
-## 📊 Power BI Dashboards  
-- **Sales Overview:** Revenue, profit, return trends  
-- **Customer Segmentation (RFM):** High-value, loyal, at-risk, churned customers  
-- **Store Profitability:** Revenue vs. operating cost across stores  
-- **Product Performance:** Bestsellers vs. high-return items  
-- **Trends:** Monthly sales & customer growth  
+Performed in Python using Pandas:
+
+Customers (df1):
+
+Converted signup_date → datetime format
+
+Filled missing age using median imputation
+
+Derived age_group (Teen, Adult, Senior etc.)
+
+Removed duplicate customer_id
+
+Returns (df2):
+
+Converted return_date → datetime
+
+Removed null rows and duplicate return_id
+
+Sales (df3):
+
+Converted order_date → datetime
+
+Filled missing store_id with "0" → represents online sales
+
+Removed duplicate order_id
+
+Stores (df4):
+
+Dropped nulls and duplicate store_id
+
+Products (df5):
+
+Derived new metrics:
+
+sold_units
+
+return_quantity
+
+return_rate (%)
+
+profit = unit_price – cost_price
+
+Filled missing brand with "Unknown"
+
+🗃️ Business Questions Solved with SQL
+
+✔ Top-selling products by revenue & quantity
+✔ Return rate by product category
+✔ Store-level profitability (revenue vs operating cost)
+✔ Customer distribution by region & age group
+✔ Top 5 customers by lifetime value (LTV)
+✔ Monthly sales & profit trend across 2 years
+✔ Channel profitability (Online vs Offline)
+
+💡 10+ SQL queries were implemented to transform raw data into actionable insights.
+
+📊 Power BI Dashboards
+
+Interactive dashboards created in Power BI include:
+
+Sales Overview → Revenue, profit, return trends
+
+Customer Segmentation (RFM) → Loyal, high-value, at-risk, churned customers
+
+Store Performance → Revenue vs Operating Cost by store
+
+Product Analysis → High-margin vs high-return products
+
+Trends → Monthly sales, customer growth, seasonality
+
+📌 Example Dashboard Screenshot:
 
 👉 *<img width="1161" height="656" alt="image" src="https://github.com/user-attachments/assets/8f5b2c12-e8a8-4a91-ac69-ba4767a09f53" />
 *  
