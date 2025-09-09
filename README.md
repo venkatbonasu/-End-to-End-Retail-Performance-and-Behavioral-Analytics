@@ -65,12 +65,8 @@ tenure with the company?
 - **Trends:** Monthly sales & customer growth 
 
 👉 *<img width="1161" height="656" alt="image" src="https://github.com/user-attachments/assets/8f5b2c12-e8a8-4a91-ac69-ba4767a09f53" />
-*  
-Key Outcomes
-•	Cleaned and structured multiple retail datasets into a relational database.
-•	Derived meaningful metrics (return_rate, profit, age_group) to simplify business analysis.
-•	Solved 10+ business problems using SQL queries.
-•	Developed interactive Power BI dashboards to visualize customer behavior, product performance, and store profitability.
+* 
+
 •	Demonstrated an end-to-end data analytics pipeline: raw data → cleaning → database modeling → SQL queries → visualization → insights.
 
 ---
